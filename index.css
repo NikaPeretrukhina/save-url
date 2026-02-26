@@ -1,0 +1,79 @@
+:root {
+  --background: white;
+  --text-color: #191919;
+  --input-color: white;
+  --toggle-btn: white;
+  --icon: "🌙";
+}
+
+[data-theme="dark"] {
+  --background: #191919;
+  --text-color: #BED754;
+  --input-color:#191919;
+  --toggle-btn: #191919;
+  --icon: "🌙";
+  --icon: "☀️";
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  min-width: 400px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 4px;       
+}
+button, #theme-toggle{
+  font-size: 16px;
+  background-color: var(--toggle-btn);
+  border: 1px solid #BED754;
+  padding: 10px 10px; /* verkleinert die Höhe */
+  line-height: 1; 
+ 
+}
+
+input {
+  background-color: var(--input-color);
+  color: var(--text-color);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #BED754;
+  margin-bottom: 4px;
+}
+
+button {
+  background: #BED754;
+  color: #191919;
+  padding: 10px 10px;
+  border: 1px solid #BED754;
+  font-weight: bold;
+}
+
+#delete-btn {
+  background: white;
+  color: #191919;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-top: 5px;
+}
+
+a {
+  color: var(--text-color);
+}
+
+
