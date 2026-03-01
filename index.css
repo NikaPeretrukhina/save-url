@@ -19,10 +19,10 @@ body {
   background-color: var(--background);
   color: var(--text-color);
   transition: all 0.3s ease;
-  margin: 0;
+  margin: 0 auto;
   padding: 10px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  min-width: 400px;
+  max-width: 302px;
 }
 
 .button-container {
@@ -38,7 +38,9 @@ button, #theme-toggle{
   line-height: 1; 
  
 }
-
+label {
+    font-weight: 900;
+}
 input {
   background-color: var(--input-color);
   color: var(--text-color);
